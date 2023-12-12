@@ -1,5 +1,5 @@
 <?php
-class MaClass
+class MaClassTest
 {
     //visible à l'exterieur de la class (pour l'attribue public)
     //Variable Public

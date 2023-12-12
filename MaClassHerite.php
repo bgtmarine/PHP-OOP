@@ -1,7 +1,7 @@
 <?php
 
 //extends permet d'hérité (ex: dans ce cas hériter de Maclass)
-class MaClassHerite extends MaClass
+class MaClassHerite extends MaClassTest
 {
   
     // public function __construct()

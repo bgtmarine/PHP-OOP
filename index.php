@@ -1,5 +1,5 @@
 <?php
-include 'MaClass.php';
+include 'MaClassTest.php';
 include 'MaClassHerite.php';
 
 // $obj = new MaClass();
@@ -38,6 +38,6 @@ include 'MaClassHerite.php';
 // $obj2->setNom('Micheline PILOCKE');
 // echo $obj2->getNom();
 
-// $personne2 = new MaClassHerite();
-// $personne2->setVariableProtected('Une chaine de caractere');
-// echo $personne2->getVariableProtected();
+$personne2 = new MaClassHerite();
+$personne2->setVariableProtected('Une chaine de caractere');
+echo $personne2->getVariableProtected();
