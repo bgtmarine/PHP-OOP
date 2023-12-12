@@ -38,6 +38,6 @@ include 'MaClassHerite.php';
 // $obj2->setNom('Micheline PILOCKE');
 // echo $obj2->getNom();
 
-$personne2 = new MaClassHerite();
-$personne2->setVariableProtected('Une chaine de caractere');
-echo $personne2->getVariableProtected();
+// $personne2 = new MaClassHerite();
+// $personne2->setVariableProtected('Une chaine de caractere');
+// echo $personne2->getVariableProtected();
