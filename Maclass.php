@@ -2,7 +2,7 @@
 class MaClass
 {
     //visible à l'exterieur de la class (pour l'attribue public)
-//Variable Public
+    //Variable Public
     public string $attributPublic;
     public string $couleur = 'vert ';
     public int $age = 54;
@@ -12,29 +12,29 @@ class MaClass
     public int $rayon;
     //un attribut peut être privée (il faut mettre un enderscore devant EX:private $_attributPrivate) 
     //quand il est privée il faut utiliser des méthode pour le récupérer
-//Variable Privée
+    //Variable Privée
     private string $_attributPrivate;
     private string $_nom = 'Michel PLIK';
-//V ariable Static
+    //V ariable Static
     static string $varStatic = 'Je suis une variable statique ';
-    
-      //une variable protected permet d'accés directement depuis l'index avec un echo ex(echo $objHerite->varProtected;)
-      protected string $varProtected = 'Je suis une variable protected';
+
+    //une variable protected permet d'accés directement depuis l'index avec un echo ex(echo $objHerite->varProtected;)
+    protected string $varProtected = 'Je suis une variable protected';
 
 
     //ce met généralement en haut de la classe 
     //il ne peut y avoir qu'une fonction __construct par classe
-       public function __construct()
-       //ici . __CLASS__ . représenta la classe utiliser
-       {
-        //echo 'Je suis une  methode magique ! ? ' . __CLASS__ . '<br>';
-       }
+    //    public function __construct()
+    //    //ici . __CLASS__ . représenta la classe utiliser
+    //    {
+    //     //echo 'Je suis une  methode magique ! ? ' . __CLASS__ . '<br>';
+    //    }
 
-       public function __destruct()
-       //ici . __CLASS__ . représenta la classe utiliser
-       {
-        //echo 'Je suis une  methode magique de la  ! ? ' . __CLASS__ . '<br>';
-       }
+    //    public function __destruct()
+    //    //ici . __CLASS__ . représenta la classe utiliser
+    //    {
+    //     //echo 'Je suis une  methode magique de la  ! ? ' . __CLASS__ . '<br>';
+    //    }
 
 
     //Méthode
@@ -72,18 +72,14 @@ class MaClass
     //appel d'un get à l'interieur de la variable pour l'appeler après
     public function getNom()
     {
-return $this->_nom;
+        return $this->_nom;
     }
-     //Methode 2
-     //pour changer la variable
-     public function setNom($nom)
-     {
+    //Methode 2
+    //pour changer la variable
+    public function setNom($nom)
+    {
         //on récupére la variable privée 
         //on crer une fonction setNom pour pouvoir changer sa valeur
         $this->_nom = $nom;
-     }
-    
+    }
 }
-
-
-

@@ -31,9 +31,13 @@ include 'MaClassHerite.php';
 
 //echo $objHerite->getVariableProtected();
 
-$obj2 = new MaClass;
-//ici exemple de ce qui ne fonctionne pas 
-// echo $obj2->varProtected;
-//modification des infos dans la variable
-$obj2->setNom('Micheline PILOCKE');
-echo $obj2->getNom();
+// $obj2 = new MaClass;
+// //ici exemple de ce qui ne fonctionne pas 
+// // echo $obj2->varProtected;
+// //modification des infos dans la variable
+// $obj2->setNom('Micheline PILOCKE');
+// echo $obj2->getNom();
+
+$personne2 = new MaClassHerite();
+$personne2->setVariableProtected('Une chaine de caractere');
+echo $personne2->getVariableProtected();
